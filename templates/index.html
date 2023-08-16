@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bangalore House Price Prediction</title>
+</head>
+<body>
+    <h1>Bangalore House Price Prediction</h1>
+    <form action="/" method="post">
+        <label for="location">Location:</label>
+        <input type="text" name="location" required><br><br>
+        <label for="sqft">Total Square Feet:</label>
+        <input type="number" name="sqft" required><br><br>
+        <label for="bath">Number of Bathrooms:</label>
+        <input type="number" name="bath" required><br><br>
+        <label for="bhk">Number of BHK:</label>
+        <input type="number" name="bhk" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h2>Predicted Price: <span>{{ prediction }}</span> Lakhs</h2>
+</body>
+</html>
